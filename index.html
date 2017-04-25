@@ -322,6 +322,14 @@
 
     <!-- Contact form -->
     <script src="js/contact.js"></script>
-                
+    
+    <!-- Service Worker -->
+    <!--<script>
+        if('serviceWorker' in navigator) {
+					navigator.serviceWorker.register('/sw.js')
+						.then( res => console.log('SW Registered: ', res.scope))
+						.catch( err => console.error(`SW Registration Failed: `, err));
+        }
+    </script>-->
 	</body>
 </html>
