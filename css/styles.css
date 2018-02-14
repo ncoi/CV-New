@@ -540,3 +540,9 @@ a:hover.back-to-top {
     margin: 20px auto 20px;
 }
 
+.success-message {
+    position: fixed;
+    left: 40%;
+    top: 10%;
+    z-index: 100;
+}
