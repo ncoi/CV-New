@@ -234,6 +234,8 @@ section .container{
 .contact-section .btn{
     background-color: #2A95BF;
     border: none;
+    width: 120px;
+    height: 40px;
 }
 .contact-section h1{
     color: #fff;

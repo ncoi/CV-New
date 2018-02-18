@@ -1,0 +1,55 @@
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: #fff;
+  background-image: url(../res/Images/home_background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+header .header-content {
+  position: relative;
+  width: 100%;
+  padding: 100px 15px;
+  text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+  color: #FAFAFA;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+  
+}
+header .header-content .header-content-inner h2 {
+  font-family: 'Droid Serif', serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+header .header-content .header-content-inner .btn-primary{
+  width: 120px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #F05F40;
+  border: none;
+  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.5s;
+}
+header .header-content .header-content-inner .btn-primary:hover,
+header .header-content .header-content-inner .btn-primary:focus{
+  background-color: #D84315;
+  outline: none;
+}
+
+.profile-picture{
+	margin: 0 auto;
+	height: 170px;
+}

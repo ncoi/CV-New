@@ -16,8 +16,9 @@
         
 		<meta charset="UTF-8"> <!-- Encoding -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For mobile Size -->
- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- import bootstrap-->
-		<link href='css/styles.css' rel='stylesheet'> <!-- import css -->
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- import bootstrap-->   
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href='css/styles.css' rel='stylesheet'> <!-- import css -->
 		<link rel="icon" type="image/png" href="res/Icons/html5.png" sizes="32x32" /> <!-- HTML 5 icon -->
         <!-- Google Analytics -->
         <script>
@@ -33,30 +34,30 @@
 
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-		<!-- Navigation Bar -->
-		<div class='navbar navbar-default navbar-fixed-top'>
-			<div class='container'>
-				<div class='navbar-header'>
-					<a href='#page-top' class='page-scroll navbar-brand'>NCOI_</a>
-					<button type='button'  class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-						<span class='sr-only'>Toggle Navigation</span>
-						<span class='icon-bar'></span>
-						<span class='icon-bar'></span>
-						<span class='icon-bar'></span>
-					</button>
-				</div>
-				<ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
-					<li><a href='#about' class='page-scroll hidden-xs'>About</a></li>
-					<li><a href='#about' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>About</a></li>
-					<li><a href='#skills' class='page-scroll hidden-xs'>Skills</a></li>
-					<li><a href='#skills' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Skills</a></li>
-					<li><a href='#projects' class='page-scroll hidden-xs'>Projects</a></li>
-					<li><a href='#projects' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Projects</a></li>
-					<li><a href='#contact' class='page-scroll hidden-xs'>Contact</a></li>
-					<li><a href='#contact' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Contact</a></li>
-				</ul>
-			</div>
-		</div>
+        <!-- Navigation Bar -->
+        <div class='navbar navbar-default navbar-fixed-top'>
+            <div class='container'>
+                <div class='navbar-header'>
+                    <a href='#page-top' class='page-scroll navbar-brand'>NCOI_</a>
+                    <button type='button'  class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                        <span class='sr-only'>Toggle Navigation</span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                    </button>
+                </div>
+                <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+                    <li><a href='#about' class='page-scroll hidden-xs'>About</a></li>
+                    <li><a href='#about' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>About</a></li>
+                    <li><a href='#skills' class='page-scroll hidden-xs'>Skills</a></li>
+                    <li><a href='#skills' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Skills</a></li>
+                    <li><a href='#projects' class='page-scroll hidden-xs'>Projects</a></li>
+                    <li><a href='#projects' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Projects</a></li>
+                    <li><a href='#contact' class='page-scroll hidden-xs'>Contact</a></li>
+                    <li><a href='#contact' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
 		<!-- Home Page -->
 		<header>
@@ -277,7 +278,7 @@
                                 <br>
                                 <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="5" required="required"></textarea>
                                 <br>
-                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                <button id="submit_message" type="submit" class="btn btn-success btn-send" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">Send message</button>
                             </div>
                         </div>
                     </div>
