@@ -1,0 +1,94 @@
+.contact {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-image: url('../res/Images/polygons-purple.jpg');
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  h1 {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  li {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
+
+  input {
+    height: 50px;
+    border-radius: 0;
+  }
+
+  textarea {
+    border-radius: 0;
+  }
+
+  &__well {
+    background-color: #fff;
+  }
+
+  &__submit-btn {
+    background-color: #2A95BF;
+    border: none;
+    width: 120px;
+    height: 40px;
+  }
+
+  &__msg-container {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 0;
+    text-align: center;
+    z-index: 1;
+
+    &__message {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+}
+// .contact-section input{
+//   height: 50px;
+//   border-radius: 0;
+// }
+
+// .contact-section textarea{
+//   border-radius: 0;
+// }
+// .contact-section .well{
+//   background-color: #fff;
+// }
+// .contact-section .btn{
+//   background-color: #2A95BF;
+//   border: none;
+//   width: 120px;
+//   height: 40px;
+// }
+// .contact-section h1{
+//   color: #fff;
+//   font-family: 'Ubuntu', sans-serif;
+//   font-weight: bold;
+//   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+// }
+// .contact-section li{
+//   color: #fff;
+//   font-family: 'Lato', sans-serif;
+//   font-size: 20px;
+
+// }

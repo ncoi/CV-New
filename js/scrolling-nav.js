@@ -4,16 +4,16 @@
 $(window).scroll(function() {
     if($(this).scrollTop() > 300) {
         $('div.navbar').removeClass('navbar-default').addClass('navbar-inverse');
-        $('a.back-to-top').fadeIn();
+        $('a.home__container__btt-btn').fadeIn();
     } else {
         $('div.navbar').removeClass('navbar-inverse').addClass('navbar-default');
-        $('a.back-to-top').fadeOut(200);
+        $('a.home__container__btt-btn').fadeOut(200);
     }
 });
 
 
 // Animate the back-to-top button
-$('a.back-to-top').click(function() {
+$('a.home__container__btt-btn').click(function() {
 	$('html, body').animate({
 		scrollTop: 0
 	}, 200);

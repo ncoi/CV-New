@@ -11,14 +11,14 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
-        
+
         <meta name="google-site-verification" content="pgVo_Ao_f32iQyGTXWLJnfmfW6ZcUkwPBkElrGeFlM4" />
-        
+
 		<meta charset="UTF-8"> <!-- Encoding -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For mobile Size -->
- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- import bootstrap-->   
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- import bootstrap-->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href='css/styles.css' rel='stylesheet'> <!-- import css -->
+        <link href='css/main.css' rel='stylesheet'> <!-- import css -->
 		<link rel="icon" type="image/png" href="res/Icons/html5.png" sizes="32x32" /> <!-- HTML 5 icon -->
         <!-- Google Analytics -->
         <script>
@@ -30,182 +30,195 @@
             ga('create', 'UA-81142507-1', 'auto');
             ga('send', 'pageview');
         </script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
         <!-- Navigation Bar -->
-        <div class='navbar navbar-default navbar-fixed-top'>
-            <div class='container'>
-                <div class='navbar-header'>
-                    <a href='#page-top' class='page-scroll navbar-brand'>NCOI_</a>
-                    <button type='button'  class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                        <span class='sr-only'>Toggle Navigation</span>
-                        <span class='icon-bar'></span>
-                        <span class='icon-bar'></span>
-                        <span class='icon-bar'></span>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#page-top" class="page-scroll navbar-brand">NCOI_</a>
+                    <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
                 </div>
-                <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
-                    <li><a href='#about' class='page-scroll hidden-xs'>About</a></li>
-                    <li><a href='#about' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>About</a></li>
-                    <li><a href='#skills' class='page-scroll hidden-xs'>Skills</a></li>
-                    <li><a href='#skills' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Skills</a></li>
-                    <li><a href='#projects' class='page-scroll hidden-xs'>Projects</a></li>
-                    <li><a href='#projects' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Projects</a></li>
-                    <li><a href='#contact' class='page-scroll hidden-xs'>Contact</a></li>
-                    <li><a href='#contact' class='page-scroll visible-xs' data-toggle='collapse' data-target='.navbar-collapse'>Contact</a></li>
+                <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+                    <li><a href="#about" class="page-scroll hidden-xs">About</a></li>
+                    <li><a href="#about" class="page-scroll visible-xs" data-toggle="collapse" data-target=".navbar-collapse">About</a></li>
+                    <li><a href="#skills" class="page-scroll hidden-xs">Skills</a></li>
+                    <li><a href="#skills" class="page-scroll visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Skills</a></li>
+                    <li><a href="#projects" class="page-scroll hidden-xs">Projects</a></li>
+                    <li><a href="#projects" class="page-scroll visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Projects</a></li>
+                    <li><a href="#contact" class="page-scroll hidden-xs">Contact</a></li>
+                    <li><a href="#contact" class="page-scroll visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Contact</a></li>
                 </ul>
             </div>
         </div>
 
 		<!-- Home Page -->
-		<header>
-	        <div class="header-content">
-	            <div class="header-content-inner">
-					<img src="res/Images/home-pic.jpg" class="img-responsive profile-picture center-block img-circle" alt="Profile Picture"/>
+		<section id="home" class="home">
+	        <div class="home__container">
+	            <div class="home__container__content">
+                    <img
+                        src="res/Images/home-pic.jpg"
+                        class="img-responsive center-block img-circle home__container__content__profile-pic "
+                        alt="Profile Picture"
+                    />
 	                <h1>NELSON CAMILO ORDUZ ILLIDGE</h1>
                     <h2>Web Developer</h2>
                     <br>
                     <div class="btn-group">
-                        <button class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CV <span class="caret"></span>
+                        <button
+                            class="btn btn-lg dropdown-toggle
+                            home__container__content__cv-btn"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        > CV <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu text-center">
-                            <li><a href="res/Docs/CV-en.pdf" target="_blank" style="font-family: 'Montserrat', sans-serif;">English <img src="res/Icons/en.png" class="cv"/></a></li>
-                            <li><a href="res/Docs/CV-pt.pdf" target="_blank" style="font-family: 'Montserrat', sans-serif;">Portuguese <img src="res/Icons/pt.png" class="cv"/></a></li>
-                            <li><a href="res/Docs/CV-es.pdf" target="_blank" style="font-family: 'Montserrat', sans-serif;">Spanish <img src="res/Icons/es.png" class="cv"/></a></li>
+                            <li><a href="res/Docs/CV-en.pdf" target="_blank" style="font-family: 'Montserrat', sans-serif;">English <img src="res/Icons/en.png" class="home__container__content__cv-icon"/></a></li>
+                            <li><a href="res/Docs/CV-pt.pdf" target="_blank" style="font-family: 'Montserrat', sans-serif;">Portuguese <img src="res/Icons/pt.png" class="home__container__content__cv-icon"/></a></li>
+                            <li><a href="res/Docs/CV-es.pdf" target="_blank" style="font-family: 'Montserrat', sans-serif;">Spanish <img src="res/Icons/es.png" class="home__container__content__cv-icon"/></a></li>
                         </ul>
                     </div>
 	            </div>
 	        </div>
-            <a href="#" class='back-to-top'>Back to Top</a>
+            <a href="#" class="home__container__btt-btn">Back to Top</a>
             <a href="http://webguruawards.com/user/details/NelsonCamiloOrduzIllidge-604" style="background: url(http://webguruawards.com/awards/GOTD/img_guru_of_the_day_white.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);width:75px;height:111px;position:absolute;bottom:10px;left:5px;z-index:99999;" target="_blank"></a>
-   		</header>
+        </section>
    		<!-- About -->
-   		<section id='about' class='about-section'>
-            <div class='container hideme'>
-                <div class='row text-center'>
-                    <div class='col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12'>
+   		<section id="about" class="about">
+            <div class="about__container container hideme">
+                <div class="row text-center">
+                    <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12">
                         <h1>About Me</h1>
                         <br>
                         <p>Hi! My name is <span>Nelson Camilo Orduz Illidge</span><br>
                          I'm a self-motivated software developer looking for work opportunities and challenges to expand my set of programming skills
                         <br><br>I'm an Information Systems Engineer graduated from Universidad Latina of Costa Rica. I love exercising, reading books, playing guitar and of course programming!</p><br>
-                        <ul class='list-unstyled list-inline'>
-                            <li><a href='https://www.linkedin.com/in/nelsonorduz' target='_blank'><img src='res/Icons/Linkedin-Icon.png' class='social-icons'/></a></li>
-                            <li><a href='https://github.com/ncoi' target='_blank'><img src='res/Icons/Github-Icon.png' class='social-icons'/></a></li>
-                            <li><a href='https://twitter.com/NCOI_' target='_blank'><img src='res/Icons/Twitter-Icon.png' class='social-icons'/></a></li>
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="https://www.linkedin.com/in/nelsonorduz" target="_blank"><img src="res/Icons/Linkedin-Icon.png" class="about__container__social-icons"/></a></li>
+                            <li><a href="https://github.com/ncoi" target="_blank"><img src="res/Icons/Github-Icon.png" class="about__container__social-icons"/></a></li>
+                            <li><a href="https://twitter.com/NCOI_" target="_blank"><img src="res/Icons/Twitter-Icon.png" class="about__container__social-icons"/></a></li>
                         <ul>
                     </div>
-                    <div class='col-sm-5 hidden-xs'>
-                        <img src='res/Images/about-pic.jpg' class='about-picture hideme' />
+                    <div class="col-sm-5 hidden-xs">
+                        <img src="res/Images/about-pic.jpg" class="about__container__secondary-pic hideme" />
                     </div>
                 </div>
             </div>
    		</section>
    		<!-- Skills -->
-   		<section id='skills' class='skills-section'>
-   	        <div class='container'>
-                <div class='row'>
-                    <div class='col-sm-11 col-sm-offset-1 text-left'>
-                        <img src='res/Images/skills.png' class='banner'/>
+   		<section id="skills" class="skills">
+   	        <div class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-sm-offset-1 text-left">
+                        <img src="res/Images/skills.png" class="skills__banner"/>
                     </div>
                 </div>
-                <div class='row'>
-                    <div class='col-sm-2 col-xs-4'>
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src='res/Images/html5.svg' class='skills-img'/>
+                <div class="row">
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="skills__flip-container">
+                            <div class="skills__flip-container__flipper">
+                                <div class="skills__flip-container__flipper__front">
+                                    <img src="res/Images/html5.svg" class="skills__skill-img"/>
                                 </div>
-                                <div class="back">
-                                    <img src='res/Images/html5.jpg' class='skills-img'/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-sm-2 col-xs-4'>
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src='res/Images/javascript.svg' class='skills-img'/>
-                                </div>
-                                <div class="back">
-                                    <img src='res/Images/javascript.jpg' class='skills-img'/>
+                                <div class="skills__flip-container__flipper__back">
+                                    <img src="res/Images/html5.jpg" class="skills__skill-img"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='col-sm-2 col-xs-4'>
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src='res/Images/css3.svg' class='skills-img'/>
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="skills__flip-container">
+                            <div class="skills__flip-container__flipper">
+                                <div class="skills__flip-container__flipper__front">
+                                    <img src="res/Images/javascript.svg" class="skills__skill-img"/>
                                 </div>
-                                <div class="back">
-                                    <img src='res/Images/css3.jpg' class='skills-img'/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-sm-2 col-xs-4'>
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src='res/Images/java.svg' class='skills-img'/>
-                                </div>
-                                <div class="back">
-                                    <img src='res/Images/java.jpg' class='skills-img'/>
+                                <div class="skills__flip-container__flipper__back">
+                                    <img src="res/Images/javascript.jpg" class="skills__skill-img"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='col-sm-2 col-xs-4'>
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src='res/Images/bootstrap.svg' class='skills-img'/>
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="skills__flip-container">
+                            <div class="skills__flip-container__flipper">
+                                <div class="skills__flip-container__flipper__front">
+                                    <img src="res/Images/css3.svg" class="skills__skill-img"/>
                                 </div>
-                                <div class="back">
-                                    <img src='res/Images/bootstrap.jpg' class='skills-img'/>
+                                <div class="skills__flip-container__flipper__back">
+                                    <img src="res/Images/css3.jpg" class="skills__skill-img"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='col-sm-2 col-xs-4'>
-                        <div class="flip-container">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src='res/Images/photoshop.svg' class='skills-img'/>
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="skills__flip-container">
+                            <div class="skills__flip-container__flipper">
+                                <div class="skills__flip-container__flipper__front">
+                                    <img src="res/Images/java.svg" class="skills__skill-img"/>
                                 </div>
-                                <div class="back">
-                                    <img src='res/Images/photoshop.jpg' class='skills-img'/>
+                                <div class="skills__flip-container__flipper__back">
+                                    <img src="res/Images/java.jpg" class="skills__skill-img"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="skills__flip-container">
+                            <div class="skills__flip-container__flipper">
+                                <div class="skills__flip-container__flipper__front">
+                                    <img src="res/Images/bootstrap.svg" class="skills__skill-img"/>
+                                </div>
+                                <div class="skills__flip-container__flipper__back">
+                                    <img src="res/Images/bootstrap.jpg" class="skills__skill-img"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-4">
+                        <div class="skills__flip-container">
+                            <div class="skills__flip-container__flipper">
+                                <div class="skills__flip-container__flipper__front">
+                                    <img src="res/Images/photoshop.svg" class="skills__skill-img"/>
+                                </div>
+                                <div class="skills__flip-container__flipper__back">
+                                    <img src="res/Images/photoshop.jpg" class="skills__skill-img"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class='row'>
+                <div class="row">
                 <div>
-                    <div class='col-sm-5 col-sm-offset-1 text-left'>
-                        <img src='res/Images/languages.png' class='banner'/>
-                        <ul class='list-unstyled text-center hidden-xs'>
+                    <div class="col-sm-5 col-sm-offset-1 text-left">
+                        <img src="res/Images/languages.png" class="skills__banner"/>
+                        <ul class="list-unstyled text-center hidden-xs">
                             <li><h3><span>Spanish</span><br> Native</h3></li>
                             <li><h3><span>English</span><br>Bilingual Proficiency</h3></li>
                             <li><h3><span>Portuguese</span><br> Professional Working Proficiency</h3></li>
                         </ul>
-                        <ul class='list-unstyled text-center visible-xs'>
+                        <ul class="list-unstyled text-center visible-xs">
                             <li><h3><span>Spanish:</span> Native</h3></li>
                             <li><h3><span>English:</span> Bilingual Proficiency</h3></li>
                             <li><h3><span>Portuguese:</span> Professional Working Proficiency</h3></li>
                         </ul>
                     </div>
-                    <div class='col-sm-5 text-left'>
-                        <img src='res/Images/certificates.png' class='banner'/>
-                        <ul class='list-unstyled text-center'>
-                            <li><a href='res/Docs/Photoshop.pdf' target="_blank"><h3>Adobe Photoshop &reg; CS5 <i class='glyphicon glyphicon-chevron-right'></i></h3></a></li>
-                            <li><a href='res/Docs/Excel.pdf' target="_blank"><h3>Microsoft Excel &reg; 2010 <i class='glyphicon glyphicon-chevron-right'></i></h3></a></li>
+                    <div class="col-sm-5 text-left">
+                        <img src="res/Images/certificates.png" class="skills__banner"/>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="res/Docs/Photoshop.pdf" target="_blank"><h3>Adobe Photoshop &reg; CS5 <i class="glyphicon glyphicon-chevron-right"></i></h3></a></li>
+                            <li><a href="res/Docs/Excel.pdf" target="_blank"><h3>Microsoft Excel &reg; 2010 <i class="glyphicon glyphicon-chevron-right"></i></h3></a></li>
+                            <li><a href="https://www.youracclaim.com/badges/43a893f3-00d1-47f5-957a-954141bb0397/linked_in_profile" target="_blank">
+                                <h3>Oracle Certified Associate Java SE 8 <i class="glyphicon glyphicon-chevron-right"></i></h3>
+                            </a></li>
                         </ul>
                     </div>
                 </div>
@@ -213,55 +226,55 @@
             </div>
    		</section>
    		<!-- Projects -->
-        <section id='projects' class='projects-section'>
-            <div class='container'>
-                <div class='row text-center'>
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="row text-center">
                     <h3>Projects done</h3>
                     <br>
                 </div>
-                <div class='row text-center'>
-                    <div class='col-sm-2 col-sm-offset-2 col-xs-3'>
-                        <img src='res/Images/window.png' class='projects-icon'>
+                <div class="row text-center">
+                    <div class="col-sm-2 col-sm-offset-2 col-xs-3">
+                        <img src="res/Images/window.png" class="projects__pjs-icon">
                     </div>
-                    <div class='col-sm-2 col-xs-3'>
-                        <img src='res/Images/play.png' class='projects-icon'>
+                    <div class="col-sm-2 col-xs-3">
+                        <img src="res/Images/play.png" class="projects__pjs-icon">
                     </div>
-                    <div class='col-sm-2 col-xs-3'>
-                        <img src='res/Images/mouse.png' class='projects-icon'>
+                    <div class="col-sm-2 col-xs-3">
+                        <img src="res/Images/mouse.png" class="projects__pjs-icon">
                     </div>
-                    <div class='col-sm-2 col-xs-3'>
-                        <img src='res/Images/interface.png' class='projects-icon'>
+                    <div class="col-sm-2 col-xs-3">
+                        <img src="res/Images/interface.png" class="projects__pjs-icon">
                     </div>
                 </div>
-                <div class='row text-center'>
+                <div class="row text-center">
                     <h1>See all the projects I've done!</h1>
-                    <a href="https://www.behance.net/ncoi" target="_blank" class="btn btn-info btn-projects">Projects</a>
+                    <a href="https://www.behance.net/ncoi" target="_blank" class="btn btn-info projects__pjs-btn">Projects</a>
                 </div>
-                <div class='row text-center'>
-                    <div class='col-sm-2 col-sm-offset-2 col-xs-3'>
-                        <img src='res/Images/desk-mob.png' class='projects-icon'>
+                <div class="row text-center">
+                    <div class="col-sm-2 col-sm-offset-2 col-xs-3">
+                        <img src="res/Images/desk-mob.png" class="projects__pjs-icon">
                     </div>
-                    <div class='col-sm-2 col-xs-3'>
-                        <img src='res/Images/up-arrow.png' class='projects-icon'>
+                    <div class="col-sm-2 col-xs-3">
+                        <img src="res/Images/up-arrow.png" class="projects__pjs-icon">
                     </div>
-                    <div class='col-sm-2 col-xs-3'>
-                        <img src='res/Images/monitor-bulb.png' class='projects-icon'>
+                    <div class="col-sm-2 col-xs-3">
+                        <img src="res/Images/monitor-bulb.png" class="projects__pjs-icon">
                     </div>
-                    <div class='col-sm-2 col-xs-3'>
-                        <img src='res/Images/multimedia.png' class='projects-icon'>
+                    <div class="col-sm-2 col-xs-3">
+                        <img src="res/Images/multimedia.png" class="projects__pjs-icon">
                     </div>
                 </div>
-                <div class='row text-center'>
+                <div class="row text-center">
                     <br>
                 </div>
             </div>
         </section>
    		<!-- Contact -->
-        <section id='contact' class='contact-section'>
+        <section id="contact" class="contact">
             <form id="contact-form" method="post" action="mail.php" role="form">
-                <div class="messages"></div>
+                <div class="contact__msg-container"></div>
                 <div class="controls">
-                    <div class='container hideme'>
+                    <div class="container hideme">
                         <div class="row">
                             <div class="col-sm-6 text-left">
                                 <h1>Contact Me! if you...</h1>
@@ -271,14 +284,15 @@
                                     <li>Just want to say hi!</li>
                                 <ul>
                             </div>
-                            <div class="text-right col-md-5 col-sm-6 well col-sm-offset-0 col-xs-offset-1 col-xs-10">
+                            <div class="well contact__well text-right col-md-5 col-sm-6 col-sm-offset-0 col-xs-offset-1 col-xs-10">
                                 <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required">
                                 <br>
                                 <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required">
                                 <br>
                                 <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="5" required="required"></textarea>
                                 <br>
-                                <button id="submit_message" type="submit" class="btn btn-success btn-send" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">Send message</button>
+                                <div class="g-recaptcha" data-sitekey="6LeQXUcUAAAAADT7i2JNHwg_As_HG-YJ21DRgWyJ" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                                <button id="submit_message" type="submit" class="btn contact__submit-btn btn-success" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">Send message</button>
                             </div>
                         </div>
                     </div>
@@ -286,33 +300,33 @@
             </form>
         </section>
         <!-- Footer -->
-        <div class='footer'>
-			<div class='container'>
-				<div class='row text-center'>
-					<div class='col-sm-6'>
-						<h4>Material Used in this site</h4>
-						<p>Background images for About, Skills and Contact tabs and icons in Projects tab <a href="http://www.freepik.com">Designed by Freepik</a></p>
-                        <br>
-					</div>
-					<div class='col-sm-6'>
-						<h4>Currently Working in</h4>
-						<ul class='list-unstyled'>
-							<li><i class='glyphicon glyphicon-globe'></i> San Jose - Costa Rica</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-        <div class='quote'>
-            <div class='container text-center'>
+        <div class="footer">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-6">
+                <h4>Material Used in this site</h4>
+                <p>Background images for About, Skills and Contact tabs and icons in Projects tab <a href="http://www.freepik.com">Designed by Freepik</a></p>
+                            <br>
+              </div>
+              <div class="col-sm-6">
+                <h4>Currently Working in</h4>
+                <ul class="list-unstyled">
+                  <li><i class="glyphicon glyphicon-globe"></i> San Jose - Costa Rica</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quote">
+            <div class="container text-center">
                 <blockquote>
                 <p>"See your world through my eyes: A universe so vast as to be immeasurable - incomprehensible even to your greatest minds."</p>
-                <footer class='foot'>Algalon the Observer, <cite title="Source Title">World of Warcraft</cite></footer>
+                <footer class="foot">Algalon the Observer, <cite title="Source Title">World of Warcraft</cite></footer>
                 </blockquote>
             </div>
         </div>
-        <div class='signature text-center'>
-            <img src='res/Images/signature.png' class='img-signature'/>
+        <div class="signature text-center">
+            <img src="res/Images/signature.png" class="img-signature"/>
         </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- calling jQuery-->
@@ -323,7 +337,7 @@
 
     <!-- Contact form -->
     <script src="js/contact.js"></script>
-    
+
     <!-- Service Worker -->
     <!--<script>
         if('serviceWorker' in navigator) {

@@ -1,107 +1,180 @@
-@import "home";
 @import "navbar";
+@import "home";
+@import "about";
+@import "projects";
+@import "skills";
+@import "contact";
+@import "footer";
+@import "variables";
 
-body, html{
+body, html {
 	width: 100%;
 	height: 100%;
 }
 
-@media(min-width:768px) {
-  header {
-      min-height: 100%;
-  }
-
-  header .header-content {
+@media(min-width: 768px) {
+  .home {
+    min-height: 100%;
+    &__container {
       position: absolute;
       top: 50%;
       padding: 0 50px;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+
+      &__content {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
   }
-
-  header .header-content .header-content-inner {
-      margin-right: auto;
-      margin-left: auto;
-      max-width: 1000px;
-  }
-
-  header .header-content .header-content-inner h1{
-      font-size: 50px;
-
-  }
-
 }
 
 @media(max-width: 992px){
-  .skills-img{
-      height: 100px;
+  .about {
+    font-size: 18px;
+    &__container {
+      p {
+        font-size: 18px;
+      }
+      &__social-icons{
+        height: 80px;
+      }
+    }
   }
+
+  .skills {
+    &__skill-img {
+      height: 100px;
+    }
+
+    &__banner {
+      height: 70px;
+    }
+  }
+
+  .projects {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    &__pjs-icon {
+      height: 60px;
+    }
+  }
+
+  .contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+//   .skills-img{
+//       height: 100px;
+//   }
   .flip-container, .front, .back {
    height: 100px;
   }
-  .banner{
-      height: 70px;
-  }
-  .about-section{
-      font-size: 18px;
-  }
-  .about-section .social-icons{
-      height: 80px;
-  }
-  .about-section p{
-      font-size: 18px;
-  }
-  .projects-icon{
-      height: 60px;
-  }
-  .projects-section h1{
-      font-size: 60px;
-  }
-  .projects-section h2{
-      font-size: 40px;
-  }
-  .contact-section {
-      padding-top: 80px;
-      padding-bottom: 80px;
-  }
+//   .banner{
+//       height: 70px;
+//   }
+//   .about-section{
+//       font-size: 18px;
+//   }
+//   .about-section .social-icons{
+//       height: 80px;
+//   }
+//   .about-section p{
+//       font-size: 18px;
+//   }
+  // .projects-icon{
+  //     height: 60px;
+  // }
+  // .projects-section h1{
+  //     font-size: 60px;
+  // }
+  // .projects-section h2{
+  //     font-size: 40px;
+  // }
 }
 
 @media(max-width: 768px) {
-  .about-section{
-      padding-top: 70px;
-      padding-bottom: 50px;
+  .about {
+    font-size: 16px;
+    &__container {
+      p {
+        font-size: 16px;
+      }
+      &__social-icons{
+        height: 50px;
+      }
+    }
   }
-  .about-section p{
-      font-size: 16px;
-  }
-  .about-section .social-icons{
-      height: 50px;
-  }
-  .skills-img{
-      height: 60px;
-  }
-  .skills-section{
-      padding-top: 55px;
-  }
-  .contact-section {
-      padding-top: 50px;
-  }
-  .contact-section h1{
+
+  .skills {
+    padding-top: 55px;
+    h1 {
       font-size: 25px;
-  }
-  .contact-section li{
+    }
+    h3 {
       font-size: 16px;
-  }
-  .skills-section h1{
-      font-size: 25px; 
-  }
-  .banner{
+    }
+    &__skill-img {
+      height: 60px;
+    }
+    &__banner {
       height: 50px;
+    }
   }
-  .skills-section h3{
+
+  .contact {
+    padding-top: 50px;
+    h1 {
+      font-size: 25px;
+    }
+    li {
       font-size: 16px;
+    }
   }
+//   .about-section{
+//       padding-top: 70px;
+//       padding-bottom: 50px;
+//   }
+//   .about-section p{
+//       font-size: 16px;
+//   }
+//   .about-section .social-icons{
+//       height: 50px;
+//   }
+//   .skills-img{
+//       height: 60px;
+//   }
+//   .skills-section{
+//       padding-top: 55px;
+//   }
+  // .contact-section {
+  //     padding-top: 50px;
+  // }
+  // .contact-section h1{
+  //     font-size: 25px;
+  // }
+  // .contact-section li{
+  //     font-size: 16px;
+  // }
+//   .skills-section h1{
+//       font-size: 25px;
+//   }
+//   .banner{
+//       height: 50px;
+//   }
+//   .skills-section h3{
+//       font-size: 16px;
+//   }
   .flip-container, .front, .back {
    height: 80px;
   }
@@ -113,14 +186,14 @@ body, html{
   /* title */
   .navbar-default .navbar-brand {
       color: #F05F40;
-      font-size: 25px;	
+      font-size: 25px;
       font-weight: bold;
       -webkit-transition: color 0.25s; /* For Safari 3.1 to 6.0 */
       transition: color 0.25s;
       transition: font-size 0.5s ease;
       -webkit-transition: font-size 0.5s ease;
   }
-  
+
   .navbar-default .navbar-brand:hover,
   .navbar-default .navbar-brand:focus {
       color: #F05F40;

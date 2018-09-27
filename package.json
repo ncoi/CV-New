@@ -1,0 +1,21 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "sw.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css --style compressed --sourcemap=none",
+    "sass-watch": "sass --watch scss/main.scss:css/main.css --sourcemap=none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncoi/personal-site.git"
+  },
+  "author": "Nelson Camilo Orduz Illidge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncoi/personal-site/issues"
+  },
+  "homepage": "https://github.com/ncoi/personal-site#readme",
+  "devDependencies": {}
+}

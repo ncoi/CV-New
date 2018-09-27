@@ -1,9 +1,9 @@
-header {
+.home {
   position: relative;
   width: 100%;
   min-height: auto;
   text-align: center;
-  color: #fff;
+  color: #FAFAFA;
   background-image: url(../res/Images/home_background.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -11,45 +11,133 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-header .header-content {
-  position: relative;
-  width: 100%;
-  padding: 100px 15px;
-  text-align: center;
-}
 
-header .header-content .header-content-inner h1 {
-  color: #FAFAFA;
-  text-align: center;
-  font-family: 'Helvetica', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+  &__container {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+
+    &__content {
+
+      h1 {
+        color: #FAFAFA;
+        text-align: center;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        text-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      h2 {
+        font-family: 'Droid Serif', serif;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+      }
+
+      &__cv-btn {
+        width: 120px;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 25px;
+        background-color: #F05F40;
+        border: none;
+        -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+        transition: background-color 0.5s;
+
+        &:hover, &:focus {
+          color: #FAFAFA;
+          background-color: #D84315;
+          outline: none;
+        }
+
+      }
+
+      &__profile-pic {
+        margin: 0 auto;
+        height: 170px;
+      }
+
+      &__cv-icon {
+        height: 20px;
+      }
+    }
+
+    /* back-to-top button*/
+    &__btt-btn {
+      display: none;
+      height: 45px;
+      width: 45px;
+      text-indent: -9999px;
+      position: fixed;
+      z-index: 999;
+      right: 20px;
+      bottom: 20px;
+      background: url("../res/Icons/back.png") no-repeat;
+      -webkit-transition: 0.25s;
+      transition: 0.25s;
+
+      &:hover {
+        background-image: url("../res/Icons/back-b.png");
+      }
+    }
+  }
+
+}
+// .home .home-content {
+//   position: relative;
+//   width: 100%;
+//   padding: 100px 15px;
+//   text-align: center;
+// }
+
+// .home .home-content .home-content-inner h1 {
+//   color: #FAFAFA;
+//   text-align: center;
+//   font-family: 'Helvetica', sans-serif;
+//   font-weight: bold;
+//   font-size: 40px;
+//   text-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
   
-}
-header .header-content .header-content-inner h2 {
-  font-family: 'Droid Serif', serif;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-}
+// }
+// .home .home-content .home-content-inner h2 {
+//   font-family: 'Droid Serif', serif;
+//   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+// }
 
-header .header-content .header-content-inner .btn-primary{
-  width: 120px;
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 25px;
-  background-color: #F05F40;
-  border: none;
-  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: background-color 0.5s;
-}
-header .header-content .header-content-inner .btn-primary:hover,
-header .header-content .header-content-inner .btn-primary:focus{
-  background-color: #D84315;
-  outline: none;
-}
+// .home .home-content .home-content-inner .btn-primary{
+//   width: 120px;
+//   font-family: Helvetica;
+//   font-weight: bold;
+//   font-size: 25px;
+//   background-color: #F05F40;
+//   border: none;
+//   -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+//   transition: background-color 0.5s;
+// }
+// .home .home-content .home-content-inner .btn-primary:hover,
+// .home .home-content .home-content-inner .btn-primary:focus{
+//   background-color: #D84315;
+//   outline: none;
+// }
 
-.profile-picture{
-	margin: 0 auto;
-	height: 170px;
-}
+// .profile-picture{
+// 	margin: 0 auto;
+// 	height: 170px;
+// }
+
+// a.back-to-top {
+//   display: none;
+//   height: 45px;
+//   width: 45px;
+//   text-indent: -9999px;
+//   position: fixed;
+//   z-index: 999;
+//   right: 20px;
+//   bottom: 20px;
+//   background: url("../res/Icons/back.png") no-repeat;
+//   -webkit-transition: 0.25s;
+//   transition: 0.25s;
+// }
+// a:hover.back-to-top {
+// background-image: url("../res/Icons/back-b.png");
+// }
